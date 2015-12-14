@@ -1,0 +1,7 @@
+services:
+  dbtng.manager:
+    class: Drupal\dbtng_example\DBTNGExampleManager
+    arguments: ['@dbtng.storage']
+  dbtng.storage:
+    class: Drupal\dbtng_example\DBTNGExampleStorage
+    arguments: ['@database']
